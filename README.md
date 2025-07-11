@@ -1,6 +1,6 @@
 # Hospital-management-system
 
- This project was created in a group with the following people: [@onlyxool], [@AbinayaKalaiarasan] and [@dornalaspandana]. 
+ This project was created in a group with the following people: [@onlyxool](https://github.com/onlyxool), [@AbinayaKalaiarasan](https://github.com/AbinayaKalaiarasan) and [@dornalaspandana](https://github.com/dornalaspandana). 
 
 ## Getting Started
 
