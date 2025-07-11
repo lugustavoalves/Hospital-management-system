@@ -1,6 +1,6 @@
 # Hospital-management-system
 
-
+ This project was created in a group with the following people: [@onlyxool], [@AbinayaKalaiarasan] and [@dornalaspandana]. 
 
 ## Getting Started
 
