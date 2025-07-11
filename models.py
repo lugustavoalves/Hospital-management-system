@@ -6,6 +6,12 @@ Classes:
     Staff: Represents staff members in the healthcare system.
     Patient: Represents patients and their association with doctors and staff.
     TestRecord: Represents medical test records associated with patients.
+    Appointment: Represents appointments between patients and doctors.
+    MedicalHistory: Represents the medical history of patients.
+    Ward: Represents hospital wards.
+    Bed: Represents beds in the hospital wards.
+    Prescription: Represents medical prescriptions issued to patients.
+    PrescriptionDetail: Represents detailed information about medications in a prescription.
 
 Each class corresponds to a table in the database, with relationships defined
 between doctors, staff, patients, and test records.
