@@ -1,0 +1,72 @@
+{
+    "questions": [
+        {
+            "category": "Doctors",
+            "questions": [
+                {
+                    "question": "Who are the cardiologists?",
+                    "query": "SELECT Doc_Name, Email FROM Doctors WHERE Speciality = 'Cardiologist';"
+                },
+                {
+                    "question": "List all doctors and their specialties.",
+                    "query": "SELECT Doc_Name, Speciality FROM Doctors;"
+                },
+                {
+                    "question": "What is the email of Dr. John Smith?",
+                    "query": "SELECT Email FROM Doctors WHERE Doc_Name = 'Dr. John Smith';"
+                }
+            ]
+        },
+        {
+            "category": "Staff",
+            "questions": [
+                {
+                    "question": "Who works in the Nursing department?",
+                    "query": "SELECT Name FROM Staff WHERE Department = 'Nursing';"
+                },
+                {
+                    "question": "What are the upcoming shifts for staff members?",
+                    "query": "SELECT Name, Upcoming_Shifts FROM Staff;"
+                },
+                {
+                    "question": "Who is in charge of Maintenance?",
+                    "query": "SELECT Name FROM Staff WHERE Department = 'Maintenance';"
+                }
+            ]
+        },
+        {
+            "category": "Patients",
+            "questions": [
+                {
+                    "question": "Which doctor is assigned to Tom Harris?",
+                    "query": "SELECT Doc_Name FROM Doctors INNER JOIN Patients ON Doctors.Doc_ID = Patients.Doc_ID WHERE Patient_Name = 'Tom Harris';"
+                },
+                {
+                    "question": "Who is treated by Dr. Emily Brown?",
+                    "query": "SELECT Patient_Name FROM Patients WHERE Doc_ID = (SELECT Doc_ID FROM Doctors WHERE Doc_Name = 'Dr. Emily Brown');"
+                },
+                {
+                    "question": "What is the contact email of Linda Carter?",
+                    "query": "SELECT Email FROM Patients WHERE Patient_Name = 'Linda Carter';"
+                }
+            ]
+        },
+        {
+            "category": "Appointments",
+            "questions": [
+                {
+                    "question": "What appointments are scheduled for Dr. James Wilson?",
+                    "query": "SELECT Appointment_Date, Speciality FROM Appointments WHERE Doc_ID = (SELECT Doc_ID FROM Doctors WHERE Doc_Name = 'Dr. James Wilson');"
+                },
+                {
+                    "question": "Show all appointments for December 2024.",
+                    "query": "SELECT Appointment_Date, Speciality FROM Appointments WHERE MONTH(Appointment_Date) = 12 AND YEAR(Appointment_Date) = 2024;"
+                },
+                {
+                    "question": "List all Radiologist appointments.",
+                    "query": "SELECT Appointment_Date FROM Appointments WHERE Speciality = 'Radiologist';"
+                }
+            ]
+        }
+    ]
+}
