@@ -49,31 +49,6 @@ Login with User Name: `admin` Password `admin`. OR login as patient without pass
 
 
 
-
-
-### Run the project (Web)
-
-```bash
-uvicorn main:app --reload
-# or
-python main_web.py
-```
-<img width="803" alt="web" src="https://github.com/user-attachments/assets/42bf9e76-d1b2-4206-bcf0-ffe83090b3db">
-
-
-
-### Test
-
-Use your browser to visit http://127.0.0.1:8000/doctors/
-
-
-
-
-
-
-
-
-
 ### ER Diagram
 
 ```mermaid
